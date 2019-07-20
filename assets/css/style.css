@@ -1,0 +1,133 @@
+/* 
+This stylesheet defines applied styles to the Basic Portfolio Bootcamp
+assignment due on July 27.
+Originally authored by Stephen L. Fox
+
+===========================================
+TABLE OF CONTENTS (by section)
+===========================================
+0.........  Default Tag Resets
+1.........  Navigation
+            - Brandmark
+            - Main Nav Section
+2.........  Main Content Area
+
+Y.........  Footer
+Z.........  Media Queries
+===========================================
+
+*/ 
+
+/* -- 0 - DEFAULT TAG RESETS --------------------------- */
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background: url('../images/lilypads.png') repeat #4aaaa5;
+    margin: 0px;
+    padding: 0px;
+    color: #777;
+    font-size: 18px;
+    line-height: 32px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    margin: 0px;
+    padding: 0px;
+}
+h2 {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 10px 0px 25px;
+    color: #4aaaa5;
+    border-bottom: 2px solid #CCC;
+    margin-bottom: 30px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* -- 1 - NAVIGATION --------------------------- */
+div.nav-wrapper {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0px;
+    background: #FFF;
+    border-bottom: 2px solid #CCC;
+    margin: 0px;
+    padding: 0px;
+    }
+    div.nav-wrapper nav {
+        width: 100%;
+        display: flex;
+        max-width: 960px;
+        margin: 0px auto;
+    }
+    div.brandmark {
+        line-height: 90px;
+        font-size: 30px;
+        font-weight: 700;
+        background: #4aaaa5;
+        padding: 0px 20px;
+        font-family: 'Georgia', Times, 'Times New Roman', serif;
+        color: #FFF;
+        min-width: 340px;
+        text-align: center;
+    }
+    ul.main-nav {
+        list-style: none;
+        display: flex;
+        justify-content: right;
+        align-content: flex-end;
+        float: right;
+        flex-basis: calc(100% - 340px);
+        }
+        ul.main-nav li {
+            float: right;
+            justify-content: right;
+            }
+            ul.main-nav li a {
+                padding: 0px 20px;
+                border-right: 1px solid #eaeaea;
+                text-decoration: none;
+                color: #777;
+                font-size: 1.1rem;
+                line-height: 90px;
+            }
+            ul.main-nav li:last-child a {
+                border-right: none;
+                padding: 0px 0px 0px 20px;
+            }
+
+/* -- 2 - MAIN CONTENT AREA --------------------------- */
+section.content {
+    background: #FFF;
+    max-width: 900px;
+    margin: 130px auto 115px;
+    padding: 30px; 
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #CCC;
+    }
+    section.content .stephen-photo {
+        text-align: left;
+        float:left;
+        padding: 0px 30px 30px 0px;
+        clear: both;
+        display: block;
+    }
+/* -- Y - FOOTER --------------------------- */
+footer.sitewide-footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    border-top: 10px solid #4aaaa5;
+    text-align: center;
+    height: 30px;
+    background: #666;
+    color: #CCC;
+    font-size: .75rem;
+    padding-top: 30px;
+}
+/* -- Z - MEDIA QUERIES --------------------------- */
