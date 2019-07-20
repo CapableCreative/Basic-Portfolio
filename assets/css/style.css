@@ -50,6 +50,8 @@ ul {
 .wrap-width.row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     }
     .wrap-width.row .half-width {
         flex-basis: 50%;
@@ -57,7 +59,8 @@ ul {
         padding: 2.5%;
     }
     .wrap-width.row .third-width {
-        flex-basis: 33%;
+        flex-basis: 31.65%;
+        box-sizing: border-box;
         padding: 2.5%;
         margin: 2.5% 0%;
         }
@@ -131,7 +134,8 @@ div.nav-wrapper {
 /* -- 3 - MAIN CONTENT AREA --------------------------- */
 section.content {
     background: #FFF;
-    max-width: 900px;
+    max-width: 960px;
+    box-sizing: border-box;
     margin: 130px auto 0px;
     padding: 30px; 
     text-align: left;
@@ -172,3 +176,22 @@ footer.sitewide-footer {
     padding-top: 30px;
 }
 /* -- Z - MEDIA QUERIES --------------------------- */
+@media only screen and (max-width: 768px){
+    .wrap-width.row .third-width {
+        flex-basis: 100%;
+        margin: 2.5%;
+    }
+    ul.main-nav {
+        position: absolute;
+        width: 90%;
+        top: 90px;
+        z-index: 2;
+        background: #FFF;
+        border-bottom: #999 2px solid;
+        float: left;
+        padding: 0px 20px;
+    }
+    section.content {
+        margin: 200px 0px 115px;
+    }
+}
