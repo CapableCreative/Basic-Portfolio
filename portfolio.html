@@ -1,0 +1,59 @@
+<!DOCTYPE HTML lang="US-EN">
+<html>
+    <head>
+        <meta lang="UTF-8">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+        <!-- JAVASCRIPT LINK HAS BEEN MOVED TO JUST BEFORE THE FOOTER, and set to defer load to the other page assets.-->
+    </head>
+    <body>
+        <div class="nav-wrapper wrap-width">
+            <nav>
+                <div class="brandmark"><a href="index.html">Stephen L. Fox</a></div>
+                <ul class="main-nav" id="home-navigation">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a id="contactModal">Contact</a></li><!-- var btn -->
+                </ul>
+            </nav><!-- /nav section will be 960px within the .nav-wrapper -->
+        </div> <!-- /div.nav-wrapper - Nav Wrapper Allows full-width nav section -->
+<!-- - - - - - - - - END OF SITE-WIDE HEADER - - - - - - - - - - - -->
+<!-- - - - - - - - - BEGIN CONTENT SECTION(S)  - - - - - - - - - - -->        
+        <section id="home-content" class="home-content content wrap-width">
+            <div class="full-width-flex-item">
+                <h2 class="content-heading">Stephen's Portfolio</h2><!-- this could have been an h1, but I chose h2 so only the highest priority headings are h1 -->
+                
+            </div>
+        </section><!-- /section.home-content - -->
+<!-- - - - - - - - - - END OF CONTENT SECTION NOTE: Ensure ID is changed for each page - - - - - - -->        
+
+<!-- - - - - - - - - BEGIN CONTACT MODAL (IN PLACE OF FULL CONTACT PAGE)  - - - - - - - - - - -->        
+        <section id="contactModalContent"><!-- var modal -->
+            <section id="contact-content" class="contact-content content wrap-width">
+                <div class="full-width-flex-item">
+                    <span class="modalClose"><a href="">&times;</a></span><!-- var close -->
+                    <h2 class="content-heading">Contact Stephen</h2><!-- this could have been an h1, but I chose h2 so only the highest priority headings are h1 -->
+                    <form>
+                        Name:
+                        <input type="text" name="fullName" placeholder="First Name + Middle Initial + Last Name">
+                        <br>
+                        Email:
+                        <input type="text" name="email" placeholder="email@domain.com">
+                        <br>
+                        Message:
+                        <br>
+                        <textarea name="message" form="usrform"></textarea>
+                        <br>
+                        <br>
+                        <input class="submitBtn" type="submit" value="Submit">
+                    </form>
+                </div>
+            </section>
+        </section>
+<!-- - - - - - - - - END CONTACT MODAL - - - - - - - - - - -->    
+<!-- - - - - - - - - BEGIN SITEWIDE FOOTER  - - - - - - - - - - -->            
+        <footer id="footer" class="sitewide-footer">
+            &copy; 2019 Stephen L. Fox
+        </footer>
+        <script src="assets/js/scripts.js" defer></script>
+    </body>
+</html>

@@ -7,11 +7,13 @@ Originally authored by Stephen L. Fox
 TABLE OF CONTENTS (by section)
 ===========================================
 0.........  Default Tag Resets
-1.........  Navigation
+1.........  Custom Scaffolding
+2.........  Navigation
             - Brandmark
             - Main Nav Section
-2.........  Main Content Area
-
+3.........  Main Content Area
+4.........  Contact Modal
+5.........  Form Elements
 Y.........  Footer
 Z.........  Media Queries
 ===========================================
@@ -45,6 +47,13 @@ ul {
     margin: 0px;
     padding: 0px;
 }
+a {
+    text-decoration: none;
+    transition: padding-right 0.5s;
+}
+a:hover {
+    cursor: pointer;
+}
 
 /* -- 1 - CUSTOM SCAFFOLDING ------------------- */
 .wrap-width.row {
@@ -77,6 +86,9 @@ ul {
             text-align: center;
             margin-bottom: 20px;
         }
+        .full-width-flex-item {
+            width: 100%;
+        }
 
 /* -- 2 - NAVIGATION --------------------------- */
 div.nav-wrapper {
@@ -106,6 +118,9 @@ div.nav-wrapper {
         min-width: 340px;
         text-align: center;
     }
+    div.brandmark a {
+        color: #FFF;
+    }
     ul.main-nav {
         list-style: none;
         display: flex;
@@ -125,7 +140,13 @@ div.nav-wrapper {
                 color: #777;
                 font-size: 1.1rem;
                 line-height: 90px;
-            }
+                }
+                ul.main-nav li a:hover {
+                    color: #000;
+                    border-bottom: 3px solid #4aaaa5;
+                    text-align: center;
+                    padding-right: 30px !important;
+                }
             ul.main-nav li:last-child a {
                 border-right: none;
                 padding: 0px 0px 0px 20px;
@@ -162,6 +183,61 @@ section.content {
                 padding: 0px 0px 0px 25px;
             }
 
+/* -- 4 - CONTACT MODAL --------------------------- */
+section#contactModalContent {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background: rgba(0,0,0,0.3);
+    animation-name: animatefade;
+    animation-duration: 0.4s;
+    }
+    .modalClose {
+        color: #000;
+        font-size: 30px;
+        display:block;
+        position: relative;
+        top: -20px;
+        right: -15px;
+        float: right;
+    }
+    @keyframes animatefade {
+        from {opacity: 0}
+        to {opacity: 1}
+      }
+
+
+/* -- 5 - FORM ELEMENTS -------------------------- */
+form {
+    width: 100%;
+    }
+    form input, form textarea {
+        width: 100%;
+        border: 1px solid #CCC;
+        line-height: 20px;
+        border-radius: 3px;
+        padding: 5px;
+        margin-bottom: 10px;
+        }
+        form textarea {
+            height: 150px;
+        }
+        input::placeholder {
+            color: #999;
+            font-style: italic;
+        }
+    .submitBtn {
+        max-width: 100px;
+        color: #FFF;
+        font-size: 16px;
+        background:  #4aaaa5;
+    }
+
 /* -- Y - FOOTER --------------------------- */
 footer.sitewide-footer {
     position: fixed;
@@ -193,5 +269,9 @@ footer.sitewide-footer {
     }
     section.content {
         margin: 200px 0px 115px;
+    }
+    section.content .stephen-photo {
+        max-width: 45%;
+        padding: 10px 10px 5px 0px
     }
 }
