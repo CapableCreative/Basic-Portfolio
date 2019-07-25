@@ -14,6 +14,7 @@ TABLE OF CONTENTS (by section)
 3.........  Main Content Area
 4.........  Contact Modal
 5.........  Form Elements
+6.........  Portfolio Elements
 Y.........  Footer
 Z.........  Media Queries
 ===========================================
@@ -100,6 +101,7 @@ div.nav-wrapper {
     border-bottom: 2px solid #CCC;
     margin: 0px;
     padding: 0px;
+    z-index: 5;
     }
     div.nav-wrapper nav {
         width: 100%;
@@ -211,7 +213,6 @@ section#contactModalContent {
         to {opacity: 1}
       }
 
-
 /* -- 5 - FORM ELEMENTS -------------------------- */
 form {
     width: 100%;
@@ -237,6 +238,42 @@ form {
         font-size: 16px;
         background:  #4aaaa5;
     }
+
+/* -- 6 - PORTFOLIO PAGE ------------------------ */
+.portfolio-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.portfolio-item {
+    flex-basis: calc(100% / 3 - 5%);
+    padding: 1.25%;
+    margin: 1.25%;
+    box-shadow: 0px 0px 1px #000;
+    transition: all 0.3s;
+    }
+    .portfolio-item:hover {
+        margin-bottom: 2.5%;
+        margin-top: 0%;
+        box-shadow: 0px 5px 7px #666;
+    }
+.portfolio-item h3 {
+    position: relative;
+    top: 175px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    line-height: 70px;
+    color: #FFF;
+    background: rgba(74, 170, 165, 0.7);    
+}
+.portfolio-item img {
+    width: 100%;
+    margin-top: -70px;
+}
 
 /* -- Y - FOOTER --------------------------- */
 footer.sitewide-footer {
