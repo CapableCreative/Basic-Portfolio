@@ -1,9 +1,8 @@
 // This scripts.js file controls the following:
 //  1 - Contact Modal on Homepage
+//  2 - Portfolio Lightbox on Portfolio Page
 //
-//
-//
-//
+
 var modal = document.getElementById('contactModalContent');
 // connect the button click action with the modal style change
 var btn = document.getElementById('contactModal');
@@ -23,4 +22,11 @@ window.onclick - function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+
+function portfolioItem() {
+    var portPic = document.getElementById('fullsizeportitem');
+    portPic.style.display = "flex";
+    portPic.style.opacity = "1.0";
 }
