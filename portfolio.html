@@ -1,7 +1,7 @@
-<!DOCTYPE HTML lang="US-EN">
+<!DOCTYPE HTML lang="us-en">
 <html>
     <head>
-        <meta lang="UTF-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
         <!-- JAVASCRIPT LINK HAS BEEN MOVED TO JUST BEFORE THE FOOTER, and set to defer load to the other page assets.-->
@@ -23,37 +23,37 @@
             <div class="full-width-flex-item">
                 <h2 class="content-heading">Stephen's Portfolio</h2><!-- this could have been an h1, but I chose h2 so only the highest priority headings are h1 -->
                 <section class="portfolio-grid">
-                    <a href="#" class="portfolio-item" onclick="portfolioItem()">
+                    <a href="#" class="portfolioitem" onclick="portfolioItem()">
                         <div class="">
                             <h3>Portfolio Image Title</h3>                
                             <img src="assets/images/stephen.jpg" />
                         </div>
                     </a>
-                    <a href="#" class="portfolio-item" onclick="portfolioItem()">
+                    <a href="#" class="portfolioitem" onclick="portfolioItem()">
                         <div class="">
                             <h3>Portfolio Image Title</h3>                
                             <img src="assets/images/stephen.jpg" />
                         </div>
                     </a>
-                    <a href="#" class="portfolio-item" onclick="portfolioItem()">
+                    <a href="#" class="portfolioitem" onclick="portfolioItem()">
                         <div class="">
                             <h3>Portfolio Image Title</h3>                
                             <img src="assets/images/stephen.jpg" />
                         </div>
                     </a>
-                    <a href="#" class="portfolio-item" onclick="portfolioItem()">
+                    <a href="#" class="portfolioitem" onclick="portfolioItem()">
                         <div class="">
                             <h3>Portfolio Image Title</h3>                
                             <img src="assets/images/stephen.jpg" />
                         </div>
                     </a>  
-                    <a href="#" class="portfolio-item" onclick="portfolioItem()">
+                    <a href="#" class="portfolioitem" onclick="portfolioItem()">
                         <div class="">
                             <h3>Portfolio Image Title</h3>                
                             <img src="assets/images/stephen.jpg" />
                         </div>
                     </a>
-                    <div class="portfolio-item" onclick="portfolioItem()">
+                    <div class="portfolioitem" onclick="portfolioItem()">
                         <div class="">
                             <h3>Portfolio Image Title</h3>                
                             <img src="assets/images/stephen.jpg" />
@@ -63,9 +63,10 @@
             </div>
         </section><!-- /section.home-content - -->
 <!-- - - - - - - - - - END OF CONTENT SECTION NOTE: Ensure ID is changed for each page - - - - - - -->        
-<div id="fullsizeportitem">
-    <img src="assets/images/stephen.jpg" alt="A black and white photo of Stephen Fox, Full Stack Develooper" />
-</div>
+    <div id="fullsizeportitem" class="lightbox closelightbox">
+        <span onclick="closelight()" class="closeportitem">X</span>
+        <img src="assets/images/stephen.jpg" alt="A black and white photo of Stephen Fox, Full Stack Develooper" />
+    </div>
 <!-- - - - - - - - - BEGIN CONTACT MODAL (IN PLACE OF FULL CONTACT PAGE)  - - - - - - - - - - -->        
         <section id="contactModalContent"><!-- var modal -->
             <section id="contact-content" class="contact-content content wrap-width">

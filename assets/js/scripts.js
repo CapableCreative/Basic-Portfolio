@@ -26,7 +26,16 @@ window.onclick - function(event) {
 
 
 function portfolioItem() {
-    var portPic = document.getElementById('fullsizeportitem');
+    var portPic = document.getElementsByClassName('lightbox') [0];
     portPic.style.display = "flex";
     portPic.style.opacity = "1.0";
 }
+
+function closelight() {
+    var closeit = document.getElementsByClassName('closelightbox') [0];
+    closeit.style.display = "none";
+}
+
+
+
+
