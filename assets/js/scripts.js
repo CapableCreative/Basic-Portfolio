@@ -32,7 +32,6 @@ function portfolioItem0() {
     var portPic = document.getElementsByClassName('lightbox0') [0];
     portPic.style.display = "flex";
     portPic.style.opacity = "1";
-    portPic.style.width = "50%";
     portPic.style.transition = "all 2s";
 }
 
@@ -40,7 +39,6 @@ function portfolioItem1() {
     var portPic = document.getElementsByClassName('lightbox1') [0];
     portPic.style.display = "flex";
     portPic.style.opacity = "1";
-    portPic.style.width = "50%";
     portPic.style.transition = "all 2s";
 }
 
@@ -48,7 +46,6 @@ function portfolioItem2() {
     var portPic = document.getElementsByClassName('lightbox2') [0];
     portPic.style.display = "flex";
     portPic.style.opacity = "1";
-    portPic.style.width = "50%";
     portPic.style.transition = "all 2s";
 }
 
@@ -56,7 +53,6 @@ function portfolioItem3() {
     var portPic = document.getElementsByClassName('lightbox3') [0];
     portPic.style.display = "flex";
     portPic.style.opacity = "1";
-    portPic.style.width = "50%";
     portPic.style.transition = "all 2s";
 }
 
@@ -64,7 +60,6 @@ function portfolioItem4() {
     var portPic = document.getElementsByClassName('lightbox4') [0];
     portPic.style.display = "flex";
     portPic.style.opacity = "1";
-    portPic.style.width = "50%";
     portPic.style.transition = "all 2s";
 }
 
@@ -72,7 +67,6 @@ function portfolioItem5() {
     var portPic = document.getElementsByClassName('lightbox5') [0];
     portPic.style.display = "flex";
     portPic.style.opacity = "1";
-    portPic.style.width = "50%";
     portPic.style.transition = "all 2s";
 }
 

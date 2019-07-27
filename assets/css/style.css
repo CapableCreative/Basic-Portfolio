@@ -276,14 +276,15 @@ form {
     }
 .lightbox {
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     width: 40%;
     max-width: 750px;
-    top: 150;
+    top: 15vh;
     padding: 20px;
     border-radius: 10px;
-    background: #FFF;
+    background: #eaeaea;
+    border: 5px solid #FFF;
     box-shadow: 0px 0px 30px rgba(0,0,0,0.7);
     left: 30%;
     animation-name: lightboxFade;
@@ -335,6 +336,11 @@ footer.sitewide-footer {
     padding-top: 30px;
 }
 /* -- Z - MEDIA QUERIES --------------------------- */
+@media only screen and (max-width: 960px) {
+    .portfolioitem {
+        flex-basis: 45%;
+    }
+}
 @media only screen and (max-width: 768px){
     .wrap-width.row .third-width {
         flex-basis: 100%;
@@ -359,5 +365,16 @@ footer.sitewide-footer {
     section.content .stephen-photo {
         max-width: 45%;
         padding: 10px 10px 5px 0px
+    }
+    .lightbox {
+        left: 5%;
+        width: 80%;
+        max-width: 900px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .portfolioitem {
+        flex-basis: 75%;
+        margin: 0% auto;
     }
 }
