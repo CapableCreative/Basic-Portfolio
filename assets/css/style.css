@@ -260,45 +260,63 @@ form {
         margin-top: 0%;
         box-shadow: 0px 9px 7px rgba(0,0,0,0.5);
     }
-.portfolioitem h3 {
-    position: relative;
-    top: 175px;
-    display: block;
-    text-align: center;
-    width: 100%;
-    line-height: 70px;
-    color: #FFF;
-    background: rgba(74, 170, 165, 0.7);    
-}
-.portfolioitem img {
-    width: 100%;
-    margin-top: -70px;
-}
-#fullsizeportitem, .lightbox {
+    .portfolioitem h3 {
+        position: relative;
+        top: 175px;
+        display: block;
+        text-align: center;
+        width: 100%;
+        line-height: 70px;
+        color: #FFF;
+        background: rgba(74, 170, 165, 0.7);    
+    }
+    .portfolioitem img {
+        width: 100%;
+        margin-top: -70px;
+    }
+.lightbox {
     display: none;
-    opacity: 0;
     position: absolute;
     z-index: 10;
-    width: 50%;
-    margin: 50px auto;
+    width: 40%;
+    max-width: 750px;
+    top: 150;
     padding: 20px;
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 0px 30px rgba(0,0,0,0.7);
-    top: 10vh;
-    left: 25%;
+    left: 30%;
+    animation-name: lightboxFade;
+    animation-duration: .5s;
     }
-    #fullsizeportitem img {
-        margin: 0px auto;
-        max-width: 100%;
-        border-radius: 5px;
+    @keyframes lightboxFade {
+        from {opacity: 0 }
+        to {opacity: 1 }
+    }
+.fullsizeportitem img {
+    margin: 0px auto;
+    max-width: 100%;
+    border-radius: 5px;
     }
     .closeportitem {
         font-weight: 900;
         color: #000;
-        width: 100px;
-        height: 100px;
-    }
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #FFF;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50px;
+        border: 3px solid #999;
+        margin: 10px;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: all 1s;
+        }
+        .closeportitem:hover {
+            opacity: 1.0;
+        }
     .hide {
         display: flex;
     }

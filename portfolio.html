@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
-        <!-- JAVASCRIPT LINK HAS BEEN MOVED TO JUST BEFORE THE FOOTER, and set to defer load to the other page assets.-->
+<!-- JAVASCRIPT LINK HAS BEEN MOVED TO JUST BEFORE THE FOOTER, and set to defer load to the other page assets.-->
     </head>
     <body>
         <div class="nav-wrapper wrap-width">
@@ -17,56 +17,52 @@
                 </ul>
             </nav><!-- /nav section will be 960px within the .nav-wrapper -->
         </div> <!-- /div.nav-wrapper - Nav Wrapper Allows full-width nav section -->
-<!-- - - - - - - - - END OF SITE-WIDE HEADER - - - - - - - - - - - -->
+<!-- // - - - - - - - END OF SITE-WIDE HEADER - - - - - - - - - - - -->
 <!-- - - - - - - - - BEGIN CONTENT SECTION(S)  - - - - - - - - - - -->        
         <section id="home-content" class="home-content content wrap-width">
             <div class="full-width-flex-item">
                 <h2 class="content-heading">Stephen's Portfolio</h2><!-- this could have been an h1, but I chose h2 so only the highest priority headings are h1 -->
                 <section class="portfolio-grid">
-                    <a href="#" class="portfolioitem" onclick="portfolioItem()">
+                    <a href="#" class="portfolioitem" onclick="portfolioItem0()">
                         <div class="">
-                            <h3>Portfolio Image Title</h3>                
-                            <img src="assets/images/stephen.jpg" />
+                            <h3>"The Gardener"</h3>                
+                            <img src="assets/images/gardThumb.jpg" alt="My favorite personal drawing" />
                         </div>
                     </a>
-                    <a href="#" class="portfolioitem" onclick="portfolioItem()">
+                    <a href="#" class="portfolioitem" onclick="portfolioItem1()">
                         <div class="">
-                            <h3>Portfolio Image Title</h3>                
-                            <img src="assets/images/stephen.jpg" />
+                            <h3>"Aged Luke"</h3>                
+                            <img src="assets/images/lukeThumb.jpg" alt="Cooler than advertised" />
                         </div>
                     </a>
-                    <a href="#" class="portfolioitem" onclick="portfolioItem()">
+                    <a href="#" class="portfolioitem" onclick="portfolioItem2()">
                         <div class="">
-                            <h3>Portfolio Image Title</h3>                
-                            <img src="assets/images/stephen.jpg" />
+                            <h3>"Raph"</h3>                
+                            <img src="assets/images/raphThumb.jpg" alt="Raphael is cool, but crude" />
                         </div>
                     </a>
-                    <a href="#" class="portfolioitem" onclick="portfolioItem()">
+                    <a href="#" class="portfolioitem" onclick="portfolioItem3()">
                         <div class="">
-                            <h3>Portfolio Image Title</h3>                
-                            <img src="assets/images/stephen.jpg" />
+                            <h3>"Savage Dragon"</h3>                
+                            <img src="assets/images/dragonThumb.jpg" alt="The Savage Dragon" />
                         </div>
                     </a>  
-                    <a href="#" class="portfolioitem" onclick="portfolioItem()">
+                    <a href="#" class="portfolioitem" onclick="portfolioItem4()">
                         <div class="">
                             <h3>Portfolio Image Title</h3>                
-                            <img src="assets/images/stephen.jpg" />
+                            <img src="assets/images/footThumb.jpg" alt="A monster in football pads" />
                         </div>
                     </a>
-                    <div class="portfolioitem" onclick="portfolioItem()">
+                    <div class="portfolioitem" onclick="portfolioItem5()">
                         <div class="">
                             <h3>Portfolio Image Title</h3>                
-                            <img src="assets/images/stephen.jpg" />
+                            <img src="assets/images/kingThumb.jpg" alt=="7KingZ album art" />
                         </div>
                     </div>  
                 </section>
             </div>
         </section><!-- /section.home-content - -->
-<!-- - - - - - - - - - END OF CONTENT SECTION NOTE: Ensure ID is changed for each page - - - - - - -->        
-    <div id="fullsizeportitem" class="lightbox closelightbox">
-        <span onclick="closelight()" class="closeportitem">X</span>
-        <img src="assets/images/stephen.jpg" alt="A black and white photo of Stephen Fox, Full Stack Develooper" />
-    </div>
+<!-- // - - - - - - - - END OF CONTENT SECTION NOTE: Ensure ID is changed for each page - - - - - - -->        
 <!-- - - - - - - - - BEGIN CONTACT MODAL (IN PLACE OF FULL CONTACT PAGE)  - - - - - - - - - - -->        
         <section id="contactModalContent"><!-- var modal -->
             <section id="contact-content" class="contact-content content wrap-width">
@@ -90,7 +86,33 @@
                 </div>
             </section>
         </section>
-<!-- - - - - - - - - END CONTACT MODAL - - - - - - - - - - -->    
+<!-- // - - - - - - - END CONTACT MODAL - - - - - - - - - - -->    
+<!-- - - - - - - - - PORTFOLIO LIGHTBOX ITEMS - - - - - - - -->
+        <div class="fullsizeportitem lightbox lightbox0 closelightbox">
+            <span onclick="closelight0()" class="closeportitem">X</span>
+            <img src="assets/images/TheGardener.jpg" alt="A mythical caretaker of a fantasy world" />
+        </div>
+        <div class="fullsizeportitem lightbox lightbox1 closelightbox">
+            <span onclick="closelight1()" class="closeportitem">X</span>
+            <img src="assets/images/luke.jpg" alt="One of my favorite heroes as a kid - Luke Skywalker" />
+        </div>
+        <div class="fullsizeportitem lightbox lightbox2 closelightbox">
+            <span onclick="closelight2()" class="closeportitem">X</span>
+            <img src="assets/images/raphael.jpg" alt="I used to love Ninja Turtles" />
+        </div>
+        <div class="fullsizeportitem lightbox lightbox3 closelightbox">
+            <span onclick="closelight3()" class="closeportitem">X</span>
+            <img src="assets/images/dragon.jpg" alt="Erik Larson's Savage Dragon!" />
+        </div>
+        <div class="fullsizeportitem lightbox lightbox4 closelightbox">
+            <span onclick="closelight4()" class="closeportitem">X</span>
+            <img src="assets/images/football.jpg" alt="A beastial football player" />
+        </div>
+        <div class="fullsizeportitem lightbox lightbox5 closelightbox">
+            <span onclick="closelight5()" class="closeportitem">X</span>
+            <img src="assets/images/7kings.jpg" alt="Album artwork for a local rap group" />
+        </div>
+<!-- // - - - - - - - END - PORTFOLIO LIGHTBOX ITEMS - - - - -->  
 <!-- - - - - - - - - BEGIN SITEWIDE FOOTER  - - - - - - - - - - -->            
         <footer id="footer" class="sitewide-footer">
             &copy; 2019 Stephen L. Fox
